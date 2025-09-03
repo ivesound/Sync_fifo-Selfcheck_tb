@@ -29,7 +29,7 @@ A configurable **synchronous FIFO** implemented in Verilog with a circular buffe
 
 ## Example Waveform (EPWave)
 
-![EPWave Screenshot](Assets/epwave.png)
+![EPWave Screenshot](Assets/epwave.PNG)
 
 *Figure 2. EPWave view of stimulus vs. FIFO outputs for a random traffic test.*
 
@@ -129,5 +129,6 @@ If your cocotb test creates a VCD/FSDB, open it in your preferred viewer (GTKWav
 3. **Drain‑until‑empty**: pop all items; verify `rempty`.
 4. **Overflow attempt**: try to write with `wfull` asserted — data must be dropped and flags stable.  
 5. **Underflow attempt**: try to read with `rempty` asserted — output must not change spuriously.
+
 
 ---
